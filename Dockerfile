@@ -14,7 +14,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install app dependencies
 COPY package.json ./
 RUN npm install --silent
-RUN npm install -g @angular/cli@7.3.9 --silent
+RUN npm install -g @angular/cli@9.1.11 --silent
 
 # add app
 COPY . /app
